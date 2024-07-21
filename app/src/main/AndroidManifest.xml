@@ -13,7 +13,8 @@
         android:required="false" />
     <uses-permission
         android:name="android.permission.ACCESS_COARSE_LOCATION"
-        android:required="false" /> <!-- SDK 30 이하에서 필요한 권한 -->
+        android:required="false" />
+    <!-- SDK 30 이하에서 필요한 권한 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
@@ -38,7 +39,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -46,6 +46,4 @@
             android:name=".ScanActivity"
             android:exported="true" />
     </application>
-
-
 </manifest>

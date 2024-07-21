@@ -50,7 +50,7 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         // DB 업그레이드 설정 생략 (에셋에서 복사된 DB를 사용하므로)
     }
 
-    private void createDatabase() throws IOException {
+    public void createDatabase() throws IOException {
         boolean dbExist = checkDatabase();
         if (!dbExist) {
             this.getReadableDatabase();
